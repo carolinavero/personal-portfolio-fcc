@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    font-family: 'Baloo Chettan 2', sans-serif;
+}
+h1 {
+    text-shadow: 1px 2px 3px #424874;
+    font-size: 4rem;
+}
+h2 {
+    text-shadow: 1px 2px 3px #424874;
+    font-size: 4rem;
+}
+nav {
+    position: fixed;
+    background-color: #3b0944;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 5px #4c0045;
+}
+nav a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Baloo Chettan 2', cursive;
+    text-shadow: 1px 2px 3px #424874;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+}
+ul {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+}
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #a12559;
+}
+#welcome-section h3 {
+    font-size: 1.5rem;
+}
+#projects {
+    background-color: #fae7f0;
+    padding: 6rem 2rem 4rem 2rem;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+#projects h2 {
+    color: #3b0944;
+    text-shadow: 1px 2px 3px #ddd;
+}
+.project-tile {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-column-gap: 2rem;
+    padding: 0;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 3px 3px 3px #ddd;
+    margin-bottom: 1rem;
+}
+.project__img {
+    max-width: 100%;
+}
+.project a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    color: #424874;
+    font-size: 1.5rem;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    padding-top: 6rem;
+    background-color: #5f1854;
+}
+#contact .contact__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact a {
+    color: #fff;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.icon-heart {
+    color: #d63447;
+}
+footer {
+    padding: 2rem;
+    border-top: 1px solid #521549;
+    background-color: #5f1854;
+}
+@media(min-width: 1200px) {
+    h1 {
+        font-size: 100px;
+    }
+    nav a {
+        font-size: 2rem;
+    }
+
+    .project-tile {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2rem;
+        padding: 1rem 3rem;
+    }
+    
+   
+}
